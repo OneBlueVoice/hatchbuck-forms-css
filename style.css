@@ -1,0 +1,266 @@
+
+/*html edits
+line 44: delete extra "phone number" and "-"
+line 44: reverse "area code" and "phone number"
+
+line 25: read note
+line 42: read note
+line 112: read note
+line 142: added radio_columns class
+line 148: added radio_columns class
+*/
+
+/*
+Not Changed:
+Custom Datetime could not be done purely through CSS, the html should be rewritten
+If you give an example of how you want it to look, happy to do that rewrite
+
+Also, picture at the end of custom datetime - not sure what that is
+
+Next/Prev buttons not changed, assuming it is from another system
+If they should be styled, please give an example and I'll be happy to do it
+*/
+
+/*
+Base form info
+*/
+
+form p {
+  margin: 0 0 30px;
+  padding: 0;
+}
+
+form *:focus {
+    outline: none;
+}
+
+form label {
+  font-size: .5em;
+  display: block;
+}
+
+form input {
+  display: block;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #555;
+  padding: 3px 2px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  font: inherit;
+  line-height: normal;
+  width: 90%;
+}
+
+form > span {
+  display: flex;
+  flex-direction: column;
+}
+
+td > span {
+  display: flex;
+  flex-direction: column;
+}
+
+span > input {
+  order: 2;
+}
+
+span > select {
+  order: 3;
+}
+
+form td  {
+  order: 1;
+  font-size: smaller;
+}
+
+form label > span {
+  color: #790000;
+}
+
+form span > input[type="checkbox"]
+{
+  margin-top: 6px;
+  width: auto !important;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1px;
+  padding: 0;
+  box-sizing: border-box !important;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  color: #333;
+  line-height: normal;
+  font: inherit;
+  font-size: larger;
+  transform: scale(1.25); /* changes size of checkbox*/
+}
+
+form span > input[type="checkbox"] + label
+{
+  display: inline;
+}
+
+form span > input[type="checkbox"] + label:after
+{
+  content:"\a";
+  white-space: pre;
+}
+
+form input[type="radio"] {
+  width: auto;
+  display: inline-block;
+}
+
+form span > input[type="radio"] + label
+{
+  display: inline-block;
+}
+
+form select
+{
+  display: block;
+  background-color: #CCC;
+  font: inherit;
+  text-indent: 2px;
+  line-height: 1.5em;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 2px 0 2px 3px;
+  font-family: inherit;
+  letter-spacing: normal;
+  font-size: inherit;
+  box-sizing: border-box!important;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  color: #333;
+  border-radius: 0px;
+}
+
+form textarea {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  color: #333;
+  font-weight: 300;
+  padding: 16px;
+  width: 90%;
+  overflow: auto;
+  font: inherit;
+  margin-top: 10px;
+  box-sizing: inherit;
+  user-select: text;
+  flex-direction: column;
+  resize: auto;
+  cursor: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+}
+
+form option {
+  box-sizing: inherit;
+  font-weight: normal;
+  display: block;
+  white-space: pre;
+  padding: 2px;
+  color: #333;
+  text-transform: none;
+  cursor: default;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  border-collapse: collapse;
+  box-sizing: inherit;
+  }
+
+form table {
+  width: 92% !important;
+  border-collapse: collapse;
+  border-spacing: 0;
+  line-height: 2;
+  margin-top: 20px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  display: table;
+  border-color: grey;
+  margin-top: 35px;
+}
+
+form table th {
+  font-size: .5em;
+  font-family: inherit;
+}
+
+form table input[type="radio"] {
+  transform: scale(1.5);
+}
+
+form tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+  border-collapse: inherit;
+  line-height: 2;
+  color: inherit;
+}
+
+form tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+  border-collapse: collapse;
+  line-height: 2;
+
+}
+
+form td {
+  padding: 0;
+  text-align: left;
+  border-collapse: collapse;
+  line-height: 2;
+}
+
+form td select {
+  margin-top: 0px;
+}
+
+/*
+custom date stuff
+*/
+
+.custom_date span
+{
+  display: inline-block;
+  order: 0;
+  flex-direction: row;
+}
+
+.custom_date select
+{
+  order: 0;
+  display: inline-block;
+}
+
+
+/*
+  Multiple Choice 2 columns
+*/
+
+.radio_columns span {
+  display: inline-block;
+  width: 50%;
+  float: left;
+}
