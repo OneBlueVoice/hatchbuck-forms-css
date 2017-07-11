@@ -1,0 +1,17 @@
+/* Requires adding ID of hatchbuck to the main form html tag */
+form#hatchbuck {
+  font-family:'Open Sans',sans serif;
+  font-size:16px;
+}
+
+/* Requires adding ID of hatchbuck-checkbox to form html tag */
+#hatchbuck-checkbox span input {
+    clear: left;
+    float: left;
+    margin: 10px;
+}
+
+#hatchbuck-checkbox span label {
+    clear: none;
+    float: left;
+}
